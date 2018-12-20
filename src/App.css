@@ -1,32 +1,170 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
+*{
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+	padding: 0;
+	margin: 0;
 }
+.todolist_resumen{
+    background-color: rgba(255,255,255,.5);
+	min-height: 100vh;
+	width: 400px;
+	text-align: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
+	border-radius: 15px;
+	box-shadow: 0 0 1em #fff;
+		align-items: left;
+	justify-content: left;
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and  (min-width: 840px) {
+  .todolist_resumen .mdl-cell{
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .todolist_main .App-header {
+  	width:100%;
   }
 }
+
+.todolist_main .App-header {
+	background: #8A2387;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #F27121, #E94057, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #F27121, #E94057, #8A2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	min-height: 100vh;
+	width: 400px;
+	text-align: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
+	border-radius: 15px;
+	box-shadow: 0 0 1em #fff;
+		align-items: center;
+	justify-content: center;
+	opacity: .9;
+}
+
+
+
+.App-header input{
+	width:180px; 
+	border-radius: 5px;
+	text-decoration: none;
+	background: #efefef;
+	color: #247ba0;	
+	align-items: center;
+	justify-content: center;
+	outline: none;
+	border: none;
+	padding: 10px;
+	font-family: ubuntu;
+	font-size: 19px;
+}
+
+.input_app::placeholder { 
+	color: #ccc; 
+	font-size: 1em; }
+
+ .App-header button{
+	width: 50px;
+	border-radius: 7px;
+	background: lightcoral;
+	color: #fff;
+	text-align: center;
+	justify-content: center;
+	text-decoration: none;
+	outline: none;
+	border: none;
+    margin-right: 0;
+    margin: 10px;
+    padding: 10px;
+    font-size: 19px;
+}
+
+
+.todolist_main .App-header button:hover{
+
+	background: #f35858;
+    cursor: pointer;
+	transform: scale(1.1);
+}
+
+.todolist_main .App-header .todo_listaitems
+{
+
+ 	align-items: center;
+	justify-content: center;
+}
+
+
+ .lalista li{
+
+	border-radius: 5px;
+	text-decoration: none;
+	background: rgba(255,255,255,.7);
+	color: #247ba0;	
+	list-style: none;
+	padding: 10px;
+	margin-bottom: 10px;
+ 
+
+
+
+}
+
+.mdl-grid .grid_list
+{
+	margin-left: 0;
+}
+
+ul.lalista {
+
+padding:60px; 
+margin-top: 0;
+   
+}
+
+.todolist_resumen ul{
+	list-style: none;
+	padding: 40px;
+	text-transform: capitalize;
+}
+
+.todolist_resumen li{
+
+		border-radius: 5px;
+	text-decoration: none;
+	background: rgba(255,255,255,.7);
+	color: #247ba0;	
+	list-style: none;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+
+.todolist_resumen{
+	
+	
+	 transform: perspective( 400px ) rotateY( 18deg );
+
+	transition: 3s all; 
+}
+
+.todolist_resumen:hover{
+ transform: scale(0.9);
+
+}
+
+.todolist_resumen a i{
+ color: white;
+ margin: 10px;
+ cursor: pointer;
+ transition: all 3s;
+}
+
+.todolist_resumen a i:hover{
+	transform: scale(1.2);
+	color:  #E94057;
+}
+
+/*http://reminiscent-holiday.surge.sh/*/
